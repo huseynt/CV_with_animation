@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  background: #000;
+}
+
+.cv {
+  width: 490px;
+  height: 700px;
+  margin: 50px auto;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.3529411765);
+}
+.cv_up {
+  width: 100%;
+  height: 110px;
+}
+.cv_up_photo {
+  width: 100%;
+  height: 110px;
+  background: url("../assets/bacgroundImg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cv_up_ProfilPhoto {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 65px;
+  left: 60px;
+}
+.cv_up_ProfilPhoto::before {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #000000;
+  border-radius: 50%;
+}
+.cv_up_ProfilPhoto_img {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+}
+.cv_down {
+  background-color: #e3e3e3;
+  width: 100%;
+  height: 590px;
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+}
+.cv_down_left {
+  background-color: rgba(208, 208, 208, 0.5254901961);
+  padding: 2% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.cv_down_left-head {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.cv_down_left-adress {
+  width: 100%;
+  padding: 0 2%;
+  padding-top: 10px;
+  background-color: transparent;
+}
+.cv_down_left-adress-item {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+.cv_down_left-adress-item-icon {
+  width: 21px;
+  height: 21px;
+  margin: 0 5px 0 0;
+}
+.cv_down_left-adress-item-text {
+  font-size: 10px;
+}
+.cv_down_left-skills {
+  width: 100%;
+  padding: 2% 2%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.cv_down_left-skills-head {
+  margin: 0 0 5px 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+.cv_down_left-skills-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cv_down_left-skills-item-text {
+  font-size: 10px;
+}
+.cv_down_left-skills-item-line {
+  width: 70px;
+  height: 5px;
+  background-color: #6c6c6c;
+}
+.cv_down_left-skills-item-line-fill {
+  display: block;
+  height: 5px;
+  width: 0;
+  background-color: #000000;
+  transition: 0.5s linear;
+}
+.cv_down_left-software {
+  width: 100%;
+  padding: 2% 2%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+.cv_down_left-software-head {
+  margin: 0 0 15px 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+.cv_down_left-software-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cv_down_left-software-item-text {
+  font-size: 10px;
+}
+.cv_down_left-software-item-line {
+  width: 70px;
+  height: 5px;
+  background-color: #6c6c6c;
+}
+.cv_down_left-software-item-line-fill {
+  display: block;
+  height: 5px;
+  width: 0;
+  background-color: #000000;
+  transition: 0.5s linear;
+}
+.cv_down_left-award {
+  padding: 2% 2%;
+}
+.cv_down_left-award-head {
+  margin: 0 0 15px 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+.cv_down_left-award-block {
+  margin-bottom: 15px;
+}
+.cv_down_left-award-block-info {
+  font-size: 10px;
+  font-weight: 600;
+}
+.cv_down_right {
+  background-color: #ffffff;
+  padding: 2% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.cv_down_right-about {
+  margin-top: 20px;
+  width: 100%;
+  height: 110px;
+}
+.cv_down_right-about-head {
+  margin: 0 0 10px 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+.cv_down_right-about-info {
+  font-size: 12px;
+  font-weight: 500;
+}
+.cv_down_right-work {
+  width: 100%;
+}
+.cv_down_right-work-head {
+  margin: 0 0 10px 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+.cv_down_right-work-block {
+  margin-top: 15px;
+}
+.cv_down_right-work-block-name {
+  font-size: 11px;
+  font-weight: 700;
+}
+.cv_down_right-work-block-years {
+  font-size: 12px;
+  font-weight: 500;
+}
+.cv_down_right-work-block-info {
+  font-size: 13px;
+  font-weight: 500;
+}
+.cv_down_right-education {
+  padding-top: 15px;
+  width: 100%;
+}
+.cv_down_right-education-head {
+  margin: 0 0 10px 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+.cv_down_right-education-block {
+  margin-top: 15px;
+}
+.cv_down_right-education-block-name {
+  font-size: 11px;
+  font-weight: 700;
+}
+.cv_down_right-education-block-years {
+  font-size: 12px;
+  font-weight: 500;
+}
+.cv_down_right-education-block-info {
+  font-size: 13px;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */
